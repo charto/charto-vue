@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"declaration": false,
+		"experimentalDecorators": true,
+		"jsx": "react",
+		"lib": ["dom", "es5", "es2015.promise"],
+		"module": "system",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"outDir": "dist",
+		"removeComments": false,
+		"sourceMap": true,
+		"target": "es5"
+	},
+	"files": [
+		"src/typings.d.ts",
+		"src/jsx.d.ts",
+		"src/App.tsx"
+	]
+}

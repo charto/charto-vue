@@ -1,0 +1,12 @@
+{
+  "name": "bundler",
+  "scripts": {
+    "cbuild": "cbuild",
+    "bundle-app": "cbuild -d -v -p .. -m systemjs-hot-reloader -o ../dist/bundle.js -C ../config-npm.js",
+    "bundle-reloader": "cbuild -d -v -p .. -s ../node_modules/systemjs-hot-reloader/next/hot-reloader.js -o ../reloader-bundle.js -C ../config-reloader.js",
+    "bundle": "npm run bundle-reloader && npm run bundle"
+  },
+  "devDependencies": {
+    "cbuild": "~0.1.2"
+  }
+}

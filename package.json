@@ -1,0 +1,34 @@
+{
+  "name": "charto-vue",
+  "version": "0.0.1",
+  "description": "Vue.ts + TypeScript + SystemJS project template",
+  "main": "dist/App.js",
+  "scripts": {
+    "tsc": "tsc",
+    "postcss": "postcss",
+    "prepublish": "tsc && tsc -p server && postcss --use autoprefixer src/*.css theme/*.css -d dist",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "av-ts": "~0.4.2",
+    "leaflet": "^1.0.1",
+    "systemjs": "^0.19.40",
+    "systemjs-plugin-css": "^0.1.32",
+    "vue": "^2.0.5",
+    "vue-router": "^2.0.1",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "chokidar-socket-emitter": "~0.5.4",
+    "http-server": "~0.9.0",
+    "postcss-cli": "^2.6.0",
+    "systemjs-hmr": "~0.1.3",
+    "systemjs-hot-reloader": "https://github.com/alexisvincent/systemjs-hot-reloader/tarball/339169e",
+    "typescript": "^2.0.8",
+    "vue-hot-reload-api": "^2.0.6"
+  }
+}
